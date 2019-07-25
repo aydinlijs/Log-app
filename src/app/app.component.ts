@@ -13,13 +13,8 @@ export class AppComponent implements OnInit {
   headings = [];
   pageCount;
   isFetching = true;
-  sideBarIsOpened = false;
 
   constructor(private http: HttpClient) {}
-
-  toggleSideBar(shouldOpen: boolean) {
-    this.sideBarIsOpened = !this.sideBarIsOpened;
-  }
 
   ngOnInit() {
     this.fetchLogs();
