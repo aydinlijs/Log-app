@@ -1,0 +1,23 @@
+ul li {
+  display: inline;
+  list-style: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  color: white;
+  margin-right: 10px;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+}
+ul {
+  padding-left: 0px;
+}
+.main-page {
+  background-color: #0567a8;
+}
+.other-page {
+  background-color: #0082ff;
+}
+.hide-nav {
+  display: none !important;
+}

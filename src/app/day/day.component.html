@@ -1,0 +1,18 @@
+<h3>{{ header }}</h3>
+<table>
+  <thead>
+    <tr>
+      <td class="desc">Description</td>
+      <td class="time">Time spent</td>
+      <td class="date">Date</td>
+    </tr>
+  </thead>
+  <tbody>
+    <log-item
+      *ngFor="let lo of endLogs"
+      [description]="lo.description"
+      [duration]="lo.duration"
+      [added]="lo.added"
+    ></log-item>
+  </tbody>
+</table>

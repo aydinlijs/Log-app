@@ -1,0 +1,24 @@
+<div class="headText">
+  <h1>Welcome to {{ title }}!</h1>
+</div>
+
+<div class="contains">
+  <div class="itemsRow">
+    <div *ngIf="isFetching" class="part1"><h2>Loading logs...</h2></div>
+    <div *ngIf="!isFetching" class="part1">
+      <day-item *ngFor="let fo of loadedLogs" [endLogs]="fo"></day-item>
+      <div class="itemsRow">
+        <div class="part3">
+          <paging-item
+            [pag]="page"
+            [count]="pageCount"
+            (switch)="pageChange($event)"
+          ></paging-item>
+        </div>
+      </div>
+    </div>
+    <div class="part2">
+      <add-item (switch)="pageChange($event)"></add-item>
+    </div>
+  </div>
+</div>

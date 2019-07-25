@@ -1,0 +1,10 @@
+tr {
+  display: inline-table;
+  width: 200%;
+}
+td {
+  border-collapse: collapse;
+  padding: 4px 10px;
+  border: 1px solid #eeeeee;
+  border-top: none;
+}

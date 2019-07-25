@@ -1,0 +1,13 @@
+<form #postForm="ngForm" (ngSubmit)="onCreateLog(postForm.value, postForm)">
+  <div class="group">
+    <label for="description">Description</label>
+    <input type="text" id="description" required ngModel name="description" />
+  </div>
+  <div class="group">
+    <label for="duration">Time spent</label>
+    <input id="duration" required ngModel name="duration" />
+  </div>
+  <button class="addBtn" type="submit" [disabled]="!postForm.valid">
+    Add
+  </button>
+</form>

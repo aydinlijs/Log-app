@@ -1,0 +1,15 @@
+<ul>
+  <li [className]="pag == 1 ? 'hide-nav' : 'other-page'" (click)="prev()">
+    &#8249;
+  </li>
+  <li
+    *ngFor="let in of counter(); let i = index"
+    (click)="onClick($event.target.innerText)"
+    [className]="i == page ? 'main-page' : 'other-page'"
+  >
+    {{ i + 1 }}
+  </li>
+  <li [className]="pag == count ? 'hide-nav' : 'other-page'" (click)="next()">
+    &#8250;
+  </li>
+</ul>

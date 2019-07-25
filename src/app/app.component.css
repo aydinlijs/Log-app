@@ -1,0 +1,43 @@
+* {
+  font-family: "Source Sans Pro", "sans-serif";
+}
+div[class^="part"],
+.itemsRow {
+  float: left;
+}
+.part1 {
+  width: 65%;
+}
+.part2 {
+  width: 25%;
+  margin-left: 5%;
+  margin-top: 15px;
+}
+.contains {
+  width: 70%;
+  margin: 0 auto;
+}
+.itemsRow {
+  width: 100%;
+}
+.part1 h2 {
+  margin-top: 20px;
+}
+.part3 ul li {
+  display: inline;
+  text-decoration: none;
+  list-style: none;
+}
+.headText {
+  text-align: center;
+}
+@media only screen and (max-width: 994px) {
+  .part1,
+  .part2 {
+    width: 100%;
+  }
+  .part2 {
+    padding-bottom: 30px;
+    margin-left: 0px;
+  }
+}
